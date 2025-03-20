@@ -8,10 +8,10 @@ const Nav =() =>{
         setMenuOpen(!menuOpen);
     }
     return(
-        <nav className="bg-purple-300 text-white h-20">
-            <div className="p-4 items-center flex flex-row justify-between">
+        <nav className="dark:bg-gray-950 text-gray-400 w-full">
+            <div className="p-7 items-center flex flex-row justify-between">
             <div className="text-2xl font-medium">
-                <h3 className="text-purple-100">Carey<span className="text-purple-100">.com</span></h3>
+                <h3 className="text-gray-400">Carey<span className="text-gray-400">.com</span></h3>
             </div>
 
             <div className="lg:hidden">
@@ -22,10 +22,10 @@ const Nav =() =>{
             <div className={`${ 
                 menuOpen ? 'flex' : 'hidden'
             } lg:flex flex-col lg:flex-row gap-4 items-center absolute lg:static top-16 left-0 w-full lg:w-auto bg-purple-300 lg:bg-transparent p-4 lg:p-0`}>
-            <a className="hover:text-white active:text-gray-700" href="/">Home</a>
-            <a className="hover:text-white" href="/About">About</a>
-            <a className="hover:text-white" href="/Projects">Projects</a>
-            <a className="hover:text-white" href="/Contact">Contact</a>
+            <a className="hover:text-green-500 active:text-gray-700" href="/">Home</a>
+            <a className="hover:text-green-500" href="/About">About</a>
+            <a className="hover:text-green-500" href="/Projects">Projects</a>
+            <a className="hover:text-green-500" href="/Contact">Contact</a>
             </div>
             </div>
         </nav>

@@ -6,9 +6,8 @@ import Nav from './components/Nav';
 const App = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Nav/>
+      <Nav />
       <MainContent />
-      <Footer />
       
     </div>
   );
