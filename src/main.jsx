@@ -8,6 +8,8 @@ import About from './pages/About.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +28,7 @@ const router = createBrowserRouter([
     element:<Contact />
   }
 ]);
+  
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
