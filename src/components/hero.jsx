@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaGithub, FaGitlab, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const MainContent = () => {
   return (
@@ -16,8 +17,8 @@ const MainContent = () => {
           </p>
 
           <div className='flex flex-col lg:flex-row gap-4 lg:gap-10'>
-            <button className='bg-inherit border border-solid rounded p-4 shadow cursor-pointer text-green-500'>Browse projects</button>
-            <button className='bg-inherit border border-solid text-green-500 p-4 shadow rounded cursor-pointer'>Contact Me</button>
+            <button className='bg-inherit border border-solid rounded p-4 shadow cursor-pointer text-green-500'><Link to="/Projects">Browse projects</Link></button>
+            <button className='bg-inherit border border-solid text-green-500 p-4 shadow rounded cursor-pointer'><a href="mailto:ogolacarey254@gmail.com">Lets talk</a></button>
           </div>
 
           <div className='flex flex-row items-center justify-center gap-6 lg:gap-10'>

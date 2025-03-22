@@ -23,7 +23,7 @@ const Nav =() =>{
                 menuOpen ? 'flex' : 'hidden'
             } lg:flex flex-col lg:flex-row gap-4 items-center absolute lg:static top-16 left-0 w-full lg:w-auto dark:bg-gray-950lg:bg-transparent p-4 lg:p-0`}>
             <a className="hover:text-green-500 active:text-gray-700" href="/">Home</a>
-            <a className="hover:text-green-500" href="/About">About</a>
+            <a className="hover:text-green-500 " href="/About">About</a>
             <a className="hover:text-green-500" href="/Projects">Projects</a>
             <a className="hover:text-green-500" href="/Contact">Contact</a>
             </div>
