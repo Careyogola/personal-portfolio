@@ -23,16 +23,10 @@ const Nav =() =>{
             <div className={`${ 
                 menuOpen ? 'flex' : 'hidden'
             } lg:flex flex-col lg:flex-row gap-4 items-center absolute lg:static top-16 left-0 w-full lg:w-auto dark:bg-gray-950lg:bg-transparent p-4 lg:p-0`}>
-            <Link to="/" className="px-3 py-1 bg-gray-700 rounded-md text-sm">Home</Link>
-            <Link to="/About" className="px-3 py-1 bg-gray-700 rounded-md text-sm">About</Link>
-            <Link to="/Projects" className="px-3 py-1 bg-gray-700 rounded-md text-sm">Projects</Link>
-            <Link to="/Contact" className="px-3 py-1 bg-gray-700 rounded-md text-sm">Contact</Link>
-            
-{/*             
-            <a className="hover:text-green-500 active:text-gray-700" href="/">Home</a>
-            <a className="hover:text-green-500 " href="/About">About</a>
-            <a className="hover:text-green-500" href="/Projects">Projects</a>
-            <a className="hover:text-green-500" href="/Contact">Contact</a> */}
+            <Link to="/" className="px-3 py-1 bg-gray-700 rounded-md text-sm hover:text-green-400">Home</Link>
+            <Link to="/About" className="px-3 py-1 bg-gray-700 rounded-md text-sm hover:text-green-400">About</Link>
+            <Link to="/Projects" className="px-3 py-1 bg-gray-700 rounded-md text-sm hover:text-green-400">Projects</Link>
+            <Link to="/Contact" className="px-3 py-1 bg-gray-700 rounded-md text-sm hover:text-green-400">Contact</Link>
             </div>
             </div>
         </nav>
