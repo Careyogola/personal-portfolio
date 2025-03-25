@@ -67,17 +67,17 @@ const Projects = () => {
         </div>
 
         <div className='border border-green-400 rounded-lg flex flex-col text-gray-300 p-5 w-96 hover:scale-105 transition-transform cursor-pointer gap-4 shadow-md bg-gray-800'>
-          <img src="/matiko.png" alt="Matiko" className="rounded" />
+          <img src="/art.png" alt="Matiko" className="rounded" />
           <p className='text-2xl font-medium text-green-300'>Okellooregeart</p>
-          <p className="text-gray-400">oregeart is a fully functional and responsive web application for commercialising traditional Antiques in United Kingdom check it out <a href="okellooregeart.com" className='text-white underline'>okellooregeart</a></p>
+          <p className="text-gray-400">oregeart is a fully functional and responsive web application for commercialising traditional Antiques in United Kingdom check it out <a target="_blank" href="https://okellooregeart.com" className='text-white underline'>okellooregeart</a></p>
           <hr className="border-gray-600" />
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">React & vite</span>
+            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">React</span>
             <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">JavaScript</span>
             <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">Tailwind CSS</span>
             <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">FontAwesome</span>
             <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">Typescript</span>
-            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">Laravel</span>
+            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">Next.js</span>
           </div>
         </div>
       </div>
