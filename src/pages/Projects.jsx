@@ -35,7 +35,7 @@ const Projects = () => {
 
       <h2 className='lg:text-4xl font-extrabold text-green-400'>Featured Projects</h2>
 
-      <div className='w-full flex justify-center'>
+      <div className='grid grid-cols-2 gap-10'>
         <div className='border border-green-400 rounded-lg flex flex-col text-gray-300 p-5 w-96 hover:scale-105 transition-transform cursor-pointer gap-4 shadow-md bg-gray-800'>
           <img src="/portfolio.png" alt="Portfolio Project" className="rounded-lg" />
           <p className='text-2xl font-medium text-green-300'>Professional Portfolio</p>
@@ -46,6 +46,20 @@ const Projects = () => {
             <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">JavaScript</span>
             <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">Tailwind CSS</span>
             <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">FontAwesome</span>
+          </div>
+        </div>
+        <div className='border border-green-400 rounded-lg flex flex-col text-gray-300 p-5 w-96 hover:scale-105 transition-transform cursor-pointer gap-4 shadow-md bg-gray-800'>
+          <img src="/matiko.png" alt="Matiko" className="rounded" />
+          <p className='text-2xl font-medium text-green-300'>Matiko! website(development underway)</p>
+          <p className="text-gray-400">Matiko! is a user friendly web application for purchasing tickets and i want to make the best tickets provider in Kenya.</p>
+          <hr className="border-gray-600" />
+          <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">React & vite</span>
+            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">JavaScript</span>
+            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">Tailwind CSS</span>
+            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">FontAwesome</span>
+            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">Typescript</span>
+            <span className="px-3 py-1 bg-gray-700 rounded-md text-sm">Laravel</span>
           </div>
         </div>
       </div>
