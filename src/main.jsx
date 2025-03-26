@@ -7,12 +7,12 @@ import Layout from "./layout.jsx";
 import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
-import App from "./App.jsx"; // Assuming this is your home page
+import App from "./App.jsx"; 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />, // Wrap everything inside Layout
+    element: <Layout />, 
     children: [
       { path: "/", element: <App /> },
       { path: "/About", element: <About /> },
