@@ -42,11 +42,11 @@ const Contact = () => {
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               className=' bg-gray-100 lg:w-lg h-40 pt-2 pl-2 rounded'>
             </textarea>
+
+            <button className='bg-inherit  text-green-500 border cursor-pointer border-green-500 p-4 hover:bg-green-500 transition hover:text-white  rounded'>Say Hello</button>
             
         </form>
-        <div>
-        <button className='bg-inherit  text-green-500 border cursor-pointer border-green-500 p-4 hover:bg-green-500 transition hover:text-white  rounded'>Say Hello</button>
-        </div>
+        
     </div>
   )
 }
