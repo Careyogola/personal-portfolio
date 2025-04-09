@@ -23,10 +23,18 @@ const Nav =() =>{
             <div className={`${ 
                 menuOpen ? 'flex' : 'hidden'
             } lg:flex flex-col lg:flex-row gap-4 items-center absolute lg:static top-16 left-0 w-full lg:w-auto dark:bg-gray-950lg:bg-transparent p-4 lg:p-0`}>
-            <Link to="/" className="hover:px-3 hover:py-1 hover:bg-gray-700 hover:rounded text-xl hover:text-green-400 font-normal">Home</Link>
-            <Link to="/About" className="hover:px-3 hover:py-1 hover:bg-gray-700 hover:rounded text-xl hover:text-green-400 font-normal">About</Link>
-            <Link to="/Projects" className="hover:px-3 hover:py-1 hover:bg-gray-700 hover:rounded text-xl hover:text-green-400 font-normal">Projects</Link>
-            <Link to="/Contact" className="hover:px-3 hover:py-1 hover:bg-gray-700 hover:rounded text-xl hover:text-green-400 font-normal">Contact</Link>
+            <Link to='/' className="group text-gray-400 transition duration-300">Home.
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-500"></span>
+            </Link>
+            <Link to='/About' className="group text-gray-400 transition duration-300">Get to know me.
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-500"></span>
+            </Link>
+            <Link to='/Projects' className="group text-gray-400 transition duration-300">Have a peep.
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-500"></span>
+            </Link>
+            <Link to='/Contact' className="group text-gray-400 transition duration-300">Lets get in touch.
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-500"></span>
+            </Link>
             </div>
             </div>
         </nav>
