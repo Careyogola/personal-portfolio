@@ -37,7 +37,7 @@ const Projects = () => {
       <h2 className='lg:text-4xl font-extrabold text-green-400'>Featured Projects</h2>
 
       <div className='grid grid-cols-3 gap-10'>
-        <div className='border border-green-400 rounded-lg flex flex-col text-gray-300 p-5 w-96 hover:scale-105 transition-transform cursor-pointer gap-4 shadow-md bg-gray-800'>
+        <div className='border-none border-green-400 rounded-lg flex flex-col text-gray-300 p-5 w-96 hover:scale-105 transition-transform cursor-pointer gap-4 shadow-2xl bg-gray-800'>
           <img src="/portfolio.png" alt="Portfolio Project" className="rounded-lg" />
           <p className='text-2xl font-medium text-green-300'>Professional Portfolio</p>
           <p className="text-gray-400">My own portfolio website built with the following listed technologies:</p>
@@ -51,7 +51,7 @@ const Projects = () => {
         </div>
 
 
-        <div className='border border-green-400 rounded-lg flex flex-col text-gray-300 p-5 w-96 hover:scale-105 transition-transform cursor-pointer gap-4 shadow-md bg-gray-800'>
+        <div className='border-none border-green-400 rounded-lg flex flex-col text-gray-300 p-5 w-96 hover:scale-105 transition-transform cursor-pointer gap-4 shadow-2xl bg-gray-800'>
           <img src="/matiko.png" alt="Matiko" className="rounded" />
           <p className='text-2xl font-medium text-green-300'>Matiko! website(development underway)</p>
           <p className="text-gray-400">Matiko! is a user friendly web application for purchasing tickets and i want to make the best tickets provider in Kenya.</p>
@@ -66,7 +66,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className='border border-green-400 rounded-lg flex flex-col text-gray-300 p-5 w-96 hover:scale-105 transition-transform cursor-pointer gap-4 shadow-md bg-gray-800'>
+        <div className='border-none border-green-400 rounded-lg flex flex-col text-gray-300 p-5 w-96 hover:scale-105 transition-transform cursor-pointer gap-4 shadow-2xl bg-gray-800'>
           <img src="/art.png" alt="Matiko" className="rounded" />
           <p className='text-2xl font-medium text-green-300'>Okellooregeart</p>
           <p className="text-gray-400">oregeart is a fully functional and responsive web application for commercialising traditional Antiques in United Kingdom check it out <a target="_blank" href="https://okellooregeart.com" className='text-white underline'>okellooregeart</a></p>
