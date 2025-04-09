@@ -10,7 +10,7 @@ const Nav =() =>{
     }
     return(
         <nav className="dark:bg-gray-950 text-gray-400 w-full">
-            <div className="p-7 items-center flex flex-row justify-between">
+            <div className="py-7 mx-40 items-center flex flex-row justify-between">
             <div className="text-2xl font-medium">
                 <Link to="/"><h3 className="text-gray-400">Carey<span className="text-gray-400">.com</span></h3></Link>
             </div>
