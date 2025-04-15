@@ -45,8 +45,19 @@ const MainContent = () => {
     {buttonLoading.projects ? <Loader size={20} color='green' /> : 'Browse projects'}
   </button>
 
-            <button className='bg-inherit border border-solid text-green-500 p-4 shadow rounded cursor-pointer'><a href="mailto:ogolacarey254@gmail.com">Lets talk</a></button>
-          </div>
+  <button
+    className='bg-inherit border border-solid w-46 rounded p-2 shadow cursor-pointer text-green-500 flex items-center justify-center'
+    onClick={() => {
+      setButtonLoading({ ...buttonLoading, projects: true });
+      setTimeout(() => {
+        window.location.href = '/contact'; // or use navigate() if using react-router-dom v6+
+      }, 1000);
+    }}
+    disabled={buttonLoading.projects}
+  >
+    {buttonLoading.projects ? <Loader size={20} color='green' /> : 'Contact me'}
+  </button>
+  </div>
 
           <div className='flex flex-row items-center justify-center gap-6 lg:gap-10'>
             <a href='https://github.com/Careyogola'><FaGithub size={30} color='white' /></a>

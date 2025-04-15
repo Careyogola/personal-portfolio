@@ -26,13 +26,13 @@ const Nav =() =>{
             <Link to='/' className="group text-gray-400 transition duration-300">Home.
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-500"></span>
             </Link>
-            <Link to='/About' className="group text-gray-400 transition duration-300">Get to know me.
+            <Link to='/about' className="group text-gray-400 transition duration-300">Get to know me.
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-500"></span>
             </Link>
-            <Link to='/Projects' className="group text-gray-400 transition duration-300">Have a peep.
+            <Link to='/projects' className="group text-gray-400 transition duration-300">Have a peep.
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-500"></span>
             </Link>
-            <Link to='/Contact' className="group text-gray-400 transition duration-300">Lets get in touch.
+            <Link to='/contact' className="group text-gray-400 transition duration-300">Lets get in touch.
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-500"></span>
             </Link>
             </div>
