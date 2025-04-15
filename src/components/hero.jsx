@@ -37,7 +37,7 @@ const MainContent = () => {
     onClick={() => {
       setButtonLoading({ ...buttonLoading, projects: true });
       setTimeout(() => {
-        window.location.href = '/Projects'; // or use navigate() if using react-router-dom v6+
+        window.location.href = '/projects'; // or use navigate() if using react-router-dom v6+
       }, 1000);
     }}
     disabled={buttonLoading.projects}
