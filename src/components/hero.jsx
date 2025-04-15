@@ -33,7 +33,7 @@ const MainContent = () => {
 
           <div className='flex flex-col lg:flex-row gap-4 lg:gap-10'>
           <button
-    className='bg-inherit border border-solid w-46 rounded p-2 shadow cursor-pointer text-green-500 flex items-center justify-center'
+    className='bg-inherit border border-solid w-46 rounded p-4 shadow cursor-pointer text-green-500 flex items-center justify-center'
     onClick={() => {
       setButtonLoading({ ...buttonLoading, projects: true });
       setTimeout(() => {
@@ -46,16 +46,16 @@ const MainContent = () => {
   </button>
 
   <button
-    className='bg-inherit border border-solid w-46 rounded p-2 shadow cursor-pointer text-green-500 flex items-center justify-center'
+    className='bg-inherit border border-solid w-46 rounded p-4 shadow cursor-pointer text-green-500 flex items-center justify-center'
     onClick={() => {
-      setButtonLoading({ ...buttonLoading, projects: true });
+      setButtonLoading({ ...buttonLoading, contact: true });
       setTimeout(() => {
         window.location.href = '/contact'; // or use navigate() if using react-router-dom v6+
       }, 1000);
     }}
-    disabled={buttonLoading.projects}
+    disabled={buttonLoading.contact}
   >
-    {buttonLoading.projects ? <Loader size={20} color='green' /> : 'Contact me'}
+    {buttonLoading.contact ? <Loader size={20} color='green' /> : 'Lets talk'}
   </button>
   </div>
 
