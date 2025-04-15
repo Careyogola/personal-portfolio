@@ -37,7 +37,8 @@ const MainContent = () => {
     onClick={() => {
       setButtonLoading({ ...buttonLoading, projects: true });
       setTimeout(() => {
-        window.location.href = '/projects'; // or use navigate() if using react-router-dom v6+
+        <Link to='/projects'></Link>;
+        // window.location.href = '/projects'; // or use navigate() if using react-router-dom v6+
       }, 1000);
     }}
     disabled={buttonLoading.projects}
@@ -50,7 +51,8 @@ const MainContent = () => {
     onClick={() => {
       setButtonLoading({ ...buttonLoading, contact: true });
       setTimeout(() => {
-        window.location.href = '/contact'; // or use navigate() if using react-router-dom v6+
+        <Link to='/contact'></Link>;
+        // window.location.href = '/contact'; // or use navigate() if using react-router-dom v6+
       }, 1000);
     }}
     disabled={buttonLoading.contact}
