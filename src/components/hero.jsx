@@ -2,8 +2,12 @@ import { React, useEffect, useState } from 'react';
 import { FaFacebook, FaGithub, FaGitlab, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Loader from '../components/Loader.jsx';
+import { useNavigate } from "react-router";
+
 
 const MainContent = () => {
+  let navigate = useNavigate();
+
 
   const [buttonLoading, setButtonLoading] = useState({
     projects: false,
@@ -37,7 +41,8 @@ const MainContent = () => {
     onClick={() => {
       setButtonLoading({ ...buttonLoading, projects: true });
       setTimeout(() => {
-        <Link to='/projects'></Link>;
+        // <Link to='/projects'></Link>;
+        navigate('/projects');
         // window.location.href = '/projects'; // or use navigate() if using react-router-dom v6+
       }, 1000);
     }}
@@ -51,7 +56,8 @@ const MainContent = () => {
     onClick={() => {
       setButtonLoading({ ...buttonLoading, contact: true });
       setTimeout(() => {
-        <Link to='/contact'></Link>;
+        navigate('/contact');
+        // <Link to='/contact'></Link>;
         // window.location.href = '/contact'; // or use navigate() if using react-router-dom v6+
       }, 1000);
     }}
