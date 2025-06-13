@@ -24,8 +24,8 @@ const Nav = () => {
             <div className="py-4 sm:py-7 px-4 sm:px-8 lg:px-40 items-center flex flex-row justify-between">
                 <div className="text-xl sm:text-2xl font-medium">
                     <Link to="/" onClick={closeMenu}>
-                        <h3 className="text-gray-400">
-                            Carey<span className="text-gray-400">.com</span>
+                        <h3 className="text-gray-400 dark:text-gray-300">
+                            carey
                         </h3>
                     </Link>
                 </div>
@@ -34,7 +34,7 @@ const Nav = () => {
                 <div className="lg:hidden">
                     <button 
                         onClick={toggleMenu} 
-                        className="text-gray-400 hover:text-gray-200 transition-colors duration-200 p-2"
+                        className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 p-2"
                         aria-label="Toggle menu"
                     >
                         {menuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -61,7 +61,7 @@ const Nav = () => {
                     </Link>
                 </div>
             </div>
-
+            
             {/* Mobile menu - slides down from top */}
             <div className={`lg:hidden absolute top-full left-0 w-full dark:bg-gray-950 bg-white shadow-lg border-t border-gray-200 dark:border-gray-800 transition-all duration-300 ease-in-out ${
                 menuOpen 
@@ -71,7 +71,7 @@ const Nav = () => {
                 <div className="flex flex-col py-4 px-4">
                     <Link 
                         to='/' 
-                        className="group text-gray-400 hover:text-gray-200 transition duration-300 py-3 px-2 border-b border-gray-200 dark:border-gray-800 last:border-b-0"
+                        className="group text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition duration-300 py-3 px-2 border-b border-gray-200 dark:border-gray-700 last:border-b-0 font-medium"
                         onClick={closeMenu}
                     >
                         Home.
@@ -79,7 +79,7 @@ const Nav = () => {
                     </Link>
                     <Link 
                         to='/about' 
-                        className="group text-gray-400 hover:text-gray-200 transition duration-300 py-3 px-2 border-b border-gray-200 dark:border-gray-800 last:border-b-0"
+                        className="group text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition duration-300 py-3 px-2 border-b border-gray-200 dark:border-gray-700 last:border-b-0 font-medium"
                         onClick={closeMenu}
                     >
                         Get to know me.
@@ -87,7 +87,7 @@ const Nav = () => {
                     </Link>
                     <Link 
                         to='/projects' 
-                        className="group text-gray-400 hover:text-gray-200 transition duration-300 py-3 px-2 border-b border-gray-200 dark:border-gray-800 last:border-b-0"
+                        className="group text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition duration-300 py-3 px-2 border-b border-gray-200 dark:border-gray-700 last:border-b-0 font-medium"
                         onClick={closeMenu}
                     >
                         Have a peep.
@@ -95,7 +95,7 @@ const Nav = () => {
                     </Link>
                     <Link 
                         to='/contact' 
-                        className="group text-gray-400 hover:text-gray-200 transition duration-300 py-3 px-2 border-b border-gray-200 dark:border-gray-800 last:border-b-0"
+                        className="group text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition duration-300 py-3 px-2 border-b border-gray-200 dark:border-gray-700 last:border-b-0 font-medium"
                         onClick={closeMenu}
                     >
                         Let's get in touch.
@@ -105,12 +105,13 @@ const Nav = () => {
             </div>
 
             {/* Overlay for mobile menu */}
-            {menuOpen && (
-                <div 
-                    className="lg:hidden fixed inset-0 bg-black bg-opacity-25 z-40"
-                    onClick={closeMenu}
-                ></div>
-            )}
+                {menuOpen && (
+                    <div 
+                        className="lg:hidden fixed inset-0 bg-black/40 z-40"
+                        onClick={closeMenu}
+                    ></div>
+                )}
+        
         </nav>
     );
 };
