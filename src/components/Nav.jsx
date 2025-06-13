@@ -25,7 +25,7 @@ const Nav = () => {
                 <div className="text-xl sm:text-2xl font-medium">
                     <Link to="/" onClick={closeMenu}>
                         <h3 className="text-gray-400">
-                            Carey<span className="text-gray-400">.com</span>
+                            carey
                         </h3>
                     </Link>
                 </div>
